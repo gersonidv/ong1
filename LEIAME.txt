@@ -1,0 +1,6 @@
+1. Coloque suas fotos (jpg/png) em img/originais/ (ex.: voluntarios.jpg).
+2. npm install && npm run imagens  -> gera .avif, .webp e .jpg em img/.
+3. Abra index.html no navegador e confira as imagens.
+4. Valide em validator.w3.org e jigsaw.w3.org/css-validator.
+5. Compacte a pasta em .zip e envie.
+Dados (nome, CNPJ, telefone, endereço, Pix) são fictícios: troque pelos reais.

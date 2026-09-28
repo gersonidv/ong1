@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ONG Mãos Solidárias: educação, alimentação e inclusão social.">
+  <title>Cadastro | Mãos Solidárias</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <a href="index.html"><img src="img/logo.svg" alt="Logo da ONG Mãos Solidárias" width="120" height="60"></a>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Seja um voluntário</h1>
+    <p>Campos com * são obrigatórios.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" autocomplete="name" minlength="5" required>
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="nascimento">Data de nascimento *</label>
+        <input type="date" id="nascimento" name="nascimento" min="1900-01-01" required>
+
+        <label for="cpf">CPF *</label>
+        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" inputmode="numeric" placeholder="000.000.000-00" title="Formato: 000.000.000-00" required>
+
+        <label for="telefone">Telefone *</label>
+        <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" maxlength="15" placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000" autocomplete="tel" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="cep">CEP *</label>
+        <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" maxlength="9" inputmode="numeric" placeholder="00000-000" title="Formato: 00000-000" autocomplete="postal-code" required>
+
+        <label for="logradouro">Logradouro *</label>
+        <input type="text" id="logradouro" name="logradouro" autocomplete="address-line1" required>
+
+        <label for="numero">Número *</label>
+        <input type="text" id="numero" name="numero" maxlength="10" required>
+
+        <label for="cidade">Cidade *</label>
+        <input type="text" id="cidade" name="cidade" autocomplete="address-level2" required>
+
+        <label for="estado">Estado *</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option>
+          <option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option>
+          <option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option>
+          <option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+          <option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option>
+          <option>SE</option><option>TO</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesse em participar</legend>
+        <p>Áreas de interesse:</p>
+        <label><input type="checkbox" name="areas" value="educacao"> Educação</label>
+        <label><input type="checkbox" name="areas" value="alimentacao"> Alimentação</label>
+        <label><input type="checkbox" name="areas" value="eventos"> Eventos</label>
+        <p>Disponibilidade *</p>
+        <label><input type="radio" name="disponibilidade" value="semana" required> Dias de semana</label>
+        <label><input type="radio" name="disponibilidade" value="fds"> Fins de semana</label>
+        <label for="mensagem">Mensagem (opcional)</label>
+        <textarea id="mensagem" name="mensagem" rows="4" maxlength="500"></textarea>
+      </fieldset>
+
+      <button type="submit">Enviar cadastro</button>
+    </form>
+  </main>
+  <script src="js/mascaras.js"></script>
+
+  <footer>
+    <address>
+      <p><a href="mailto:contato@maossolidarias.org.br">contato@maossolidarias.org.br</a> | <a href="tel:+554833330000">(48) 3333-0000</a></p>
+    </address>
+    <p>CNPJ 00.000.000/0001-00 (fictício)</p>
+    <p>&copy; 2026 ONG Mãos Solidárias. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
